@@ -34,16 +34,11 @@ from django.utils.translation import ugettext as _
         <a href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
       </li>
     %endif
-    <li class="item nav-courseware-01">
-      <a href="">
-       <img src="/static/${settings.DEFAULT_SITE_THEME}/images/kenyaflag.png" height="55" title="Kenya flag"/>
-      </a>
-    </li>
+    
   </%block>
 </ol>
 
 <%include file="../user_dropdown.html"/>
-
 <a href="${get_online_help_info(online_help_token)['doc_url']}"
          target="_blank"
          class="doc-link">${_("Help")}</a>
@@ -57,3 +52,5 @@ from django.utils.translation import ugettext as _
     </li>
   </ol>
 % endif
+
+
