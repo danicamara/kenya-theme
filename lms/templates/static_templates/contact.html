@@ -18,7 +18,7 @@
 
                     <li class="field required text">
                         <label for="id_email">Your Email:</label>
-                        <input type="text" name="email" id="id_email">
+                        <input type="email" name="email" id="id_email">
                     </li>
 
                     <li class="field required text">
@@ -28,12 +28,12 @@
 
                     <li class="field text">
                         <label for="id_phone">Phone:</label>
-                        <input id="id_phone" type="text" name="phone" maxlength="255">
+                        <input id="id_phone" type="phone" name="phone" maxlength="255">
                     </li>
 
                     <li class="field text">
                         <label for="id_i_am_a">I am a: </label>
-                        <select name="i_am_a" id="id_i_am_a">
+                        <select name="i_am_a" id="id_i_am_a" required>
                             <option value="" selected="selected">-- select --</option>
                             <option value="student">Student</option>
                             <option value="professor">Professor</option>
@@ -44,8 +44,8 @@
                     </li>
 
                     <li class="field required text">
-                        <label for="id_inquiry_type">Inquiry type: </label>
-                        <select name="inquiry_type" id="id_inquiry_type">
+                        <label for="id_inquiry_type" >Inquiry type: </label>
+                        <select name="inquiry_type" id="id_inquiry_type" required>
                             <option value="" selected="selected">-- select --</option>
                             <option value="registration">Question about Registration and Activation</option>
                             <option value="technical">I am having a Technology Problem</option>
